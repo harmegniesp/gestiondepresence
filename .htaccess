@@ -1,0 +1,33 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/$ index.php [QSA,L]
+RewriteRule ^accueil/$ index.php?action=accueil [QSA,L]
+RewriteRule ^ecole/$ index.php?action=ecole [QSA,L]
+RewriteRule ^formation/$ index.php?action=formation [QSA,L]
+RewriteRule ^etudiant/$ index.php?action=etudiant [QSA,L]
+RewriteRule ^planification/$ index.php?action=planification [QSA,L]
+RewriteRule ^contact/$ index.php?action=contact [QSA,L]
+RewriteRule ^admin/$ index.php?action=admin [QSA,L]
+RewriteRule ^newsletter/$ index.php?action=newsletter [QSA,L]
+
+RewriteRule ^encoder_ecole/$ index.php?action=encoder_ecole [QSA,L]
+RewriteRule ^modifier_ecole/$ index.php?action=modifier_ecole [QSA,L]
+RewriteRule ^supprimer_ecole/$ index.php?action=supprimer_ecole [QSA,L]
+RewriteRule ^afficher_ecoles/$ index.php?action=afficher_ecoles [QSA,L]
+RewriteRule ^lister_ecole/$ index.php?action=lister_ecole [QSA,L]
+
+RewriteRule ^afficher_ecoles/(-?[0-9]+)/$ index.php?action=afficher_ecoles&page=$1 [QSA,L]
+
+RewriteRule ^encoder_formation/$ index.php?action=encoder_formation [QSA,L]
+RewriteRule ^modifier_formation/$ index.php?action=modifier_formation [QSA,L]
+RewriteRule ^supprimer_formation/$ index.php?action=supprimer_formation [QSA,L]
+RewriteRule ^afficher_formations/$ index.php?action=afficher_formations [QSA,L]
+RewriteRule ^lister_formation/$ index.php?action=lister_formation [QSA,L]
+
+RewriteRule ^encoder_etudiant/$ index.php?action=encoder_etudiant [QSA,L]
+RewriteRule ^modifier_etudiant/$ index.php?action=modifier_etudiant [QSA,L]
+RewriteRule ^supprimer_etudiant/$ index.php?action=supprimer_etudiant [QSA,L]
+RewriteRule ^afficher_etudiants/$ index.php?action=afficher_etudiants [QSA,L]
+RewriteRule ^lister_etudiant/$ index.php?action=lister_etudiant [QSA,L]

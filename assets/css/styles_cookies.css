@@ -1,0 +1,23 @@
+/* à externaliser */
+div#divCookie {
+    display:none;
+}
+/* gestion cookies */
+div#divCookie {
+    position:fixed;
+    bottom:0px;
+    background-color:blue;
+    color:white;
+    width:100%;
+    height:40px;
+    display:block;
+}
+div#divCookie a:link{
+    color:yellow;
+}
+div#divCookie a:visited{
+    color:red;
+}
+div#divCookie a:hover{
+    color:pink;
+}

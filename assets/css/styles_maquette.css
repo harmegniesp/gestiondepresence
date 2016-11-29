@@ -1,0 +1,168 @@
+	html{
+	}
+	
+	body{
+	margin:0px;padding:0px;
+	background-color:grey;	
+	background-image:url('../textures/texture.jpg'); /* à changer */
+	background-repeat:repeat; /* effet mosaïque */
+	background-attachment:fixed;
+	}
+	
+	/* permet de définir une police spéciale en donnant un nom ici police */
+	@font-face{font-family:'mapolice'; 
+		src:url('../fonts/Raisin_des_Sables.ttf') format('truetype');
+		font-style:normal;
+		font-weight:normal;
+		}
+		
+	/* utilisation de la police spéciale */	
+	p#titreSite {
+	font-family:mapolice;font-size:80px;color:rgb(0,0,255);
+	text-align:center;
+	text-shadow:2px 2px red;
+	margin-top:2px;
+
+	}
+	
+	/* déclarer mes balises html5 */
+	main {
+	margin-left:auto;margin-right:auto; 
+	/*centrer la balise par rapport à la fenêtre*/
+	width:1000px;
+	height:auto;
+	overflow:hidden; /* cacher ce qui dépasse de la balise */
+	}
+	header {
+	width:1000px;
+	height:110px;
+	background-color:white;
+	overflow:hidden; 
+	}
+	footer {
+	clear:both;/* remettre cette balise en fin de maquette */
+	width:1000px;
+	height:75px;	
+	background-color:yellow;
+	overflow:hidden; 
+	}
+	nav#nav-header {
+	width:1000px;
+	height:70px;
+	background-color:orange;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	}
+	/* les différentes sections */
+	/* simplifier */
+	/*section#accueil,section#ecole,section#formation,section#etudiant,section#planification,section#contact,section#admin,
+	section#inserer_ecole,section#modifier_ecole,section#supprimer_ecole,section#afficher_ecole,section#lister_ecole,
+	section#inserer_formation,section#modifier_formation,section#supprimer_formation,section#afficher_formation,section#lister_formation,
+	section#inserer_etudiant,section#modifier_etudiant,section#supprimer_etudiant,section#afficher_etudiant,section#lister_etudiant{
+	width:1000px;
+	min-height:500px;
+	height:auto;
+	background-color:olive;
+	}
+	section#newsletter {
+	width:1000px;
+	height:auto;
+	background-color:cyan;
+	min-height:500px;
+	}
+	*/
+	section#bodyMain {
+		width:1000px;
+		min-height:500px;
+		height:auto;
+		background-color:olive;
+	}
+	
+	/* positionnement des logos de la société */
+	figure#fig_left,figure#fig_right{
+	margin:5px;
+	}
+	figure#fig_left{
+	float:left; /*balise flottante*/
+	}
+	figure#fig_right{
+	float:right; /*balise flottante*/
+	}
+	
+	aside#navFlottant{
+	float:left;
+	width:225px;
+	height:auto;
+	background-color:pink;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	}
+	
+	article{
+	padding:10px;
+	}
+
+
+	div#flash {
+		border:2px solid red;padding:5px;
+		margin-top:10px;
+	}
+	
+	/* barre de navigation principale */
+		ul#barrePrincipale {display:inline-block;margin-top:10px;}
+		ul#barrePrincipale li {display:inline;} 
+		/* les li en inLine et absence de puces par défaut */
+		ul#barrePrincipale li a {font-size: 20px;color:white;font-style: bold}
+		ul#barrePrincipale li  {
+			float:left; /* important: pour pouvoir dimensionner les box */
+			list-style-type: none;  /* pas de style par défaut, pas nécessaire car display en inline */
+			width: 125px;
+			height: 50px; 
+			border:2px solid white; /* largeur + type + couleur*/
+			background-color:#000;
+			text-align:center; 
+			line-height: 50px;
+			margin-right:5px;
+		}
+		
+	/* barre de navigation secondaire dans aside */
+	ul#barreSecondaire {
+	list-style-type: none; margin-left:10px;margin-top:10px;} 
+	/* pas de puces et décalage vers la gauche */
+	/* la barre secondaire est déplacée de 10px à gauche dans aside */
+	/* modifier si nécessaire */
+		ul#barreSecondaire li a{font-size: 16px;color:purple;font-style: bold}
+			ul#barreSecondaire li {
+				width:200px;
+				height: 50px; 
+				border:2px solid purple; /* largeur + type + couleur*/
+				background-color:#FFF;
+				text-align:center; 
+				line-height: 50px; /* pour centrer verticalement le texte dans un box ; donner en line-height la hauteur du box */
+			}	
+
+	/* positionnement du contenu du footer */
+	div#footer {
+	margin:25px;
+	}
+	table#footer{
+	border-collapse:collapse; /*pas d'espace entre les cellules*/
+	/* remplacement des cellspacing et cellpadding attributs HTML */
+	empty-cells:show; /*affichage des cellules vides*/
+	table-layout:auto;	/*calcul de la largeur du tableau en fonction de la 1ère ligne*/
+	}
+
+	/* le formulaire inscription newsletter */
+	fieldset{
+	border:2px solid blue;padding:5px;
+	}
+	legend{
+	font-familly:arial;font-size:16px;font-weight:bold;color:blue;
+	}
+	label {
+    cursor: default;
+	}
+	
+	

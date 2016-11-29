@@ -1,0 +1,50 @@
+/* code Css utf8 */
+/* styles de base*/	
+
+	main,header,footer,section,article,aside,nav,figure {display:block;margin:0px}
+	/* récupérer reset.css sur le net pour réinitialiser toutes les balises html */
+	/* rédéfinition des balises standards */
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	p {
+		font-family:"Times New Roman";
+		font-size:12px;
+		color:silver;
+	}
+	h1,h2,h3{
+		font-family:arial,helvetica;
+		font-weight:bold;
+	}
+	h1{
+		color:rgb(0,0,255);font-size:20px;margin-bottom:10px;
+	}
+	h2{
+		color:#0F0;font-size:18px;margin-bottom:5px;
+	}
+	h3{
+		color:red;font-size:16px;margin-bottom:5px;
+	}
+	div,span {
+		margin:0px;padding:0px
+	}
+	/* redéfinition des ancres */
+	a {
+		text-decoration:none;
+		font-family:"Times New Roman";
+	}
+	/* pseudo classes */
+	a:visited{
+	color:purple;
+	}
+	a:hover{
+	color:yellow;
+	}
+	a:link{
+	color:blue;	
+	}
+	a:active{
+	color:olive;
+	}
