@@ -15,7 +15,7 @@ $mail->SMTPSecure = 'ssl'; //'tls'; // Gmail REQUIERT Le transfert securise
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465; //587;
 $mail->Username = "patrice.harmegnies@gmail.com";
-$mail->Password = "hpph$&5233"; // à changer*/
+$mail->Password = "**********"; // à changer*/
 $mail->Host = 'smtp.skynet.be';
 $mail->Port = 25;
 $mail->SetFrom("patrice.harmegnies@skynet.be", "Patrice Harmegnies");
